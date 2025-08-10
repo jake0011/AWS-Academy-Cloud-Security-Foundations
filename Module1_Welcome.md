@@ -1,6 +1,35 @@
 # ACSFv1 EN SG M01 – Course Overview
 
-## 📘 Course Outline
+# Section 1:
+
+## Course Prerequisites and Objectives:
+
+### Prerequisites:
+- Completed the **AWS Academy Cloud Foundations** course or have equivalent experience.
+- Working knowledge of:
+  - **Distributed systems**
+  - **General networking concepts**
+  - **Multi-tier architectures**
+- Familiarity with **cloud computing concepts**
+
+> **Note**:  
+> - *Working knowledge* means you can successfully work with a subject, even without deep understanding.  
+> - *Familiarity* means you’ve been exposed to and have a basic understanding of the concepts.
+
+
+### Objectives:
+After completing this course, you should be able to:
+- Identify **security benefits and responsibilities** of using AWS Cloud.
+- Use the **identity and access management** features of AWS.
+- Describe how to **secure
+
+
+
+# Section 2:
+
+## Course Overview
+
+### 📘 Course Outline
 
 - **Module 1**: Welcome  
 - **Module 2**: Introduction to Security on AWS  
@@ -13,9 +42,8 @@
 
 > These modules are designed to help achieve the course objectives.
 
----
 
-## 🎓 Course Modalities
+### 🎓 Course Modalities
 
 ### Slides
 - Available for all modules.
@@ -36,9 +64,8 @@
 - **Module 6**: Monitoring and Alerting with CloudTrail and CloudWatch  
 - **Module 7**: Remediating an Incident by Using AWS Config and Lambda  
 
----
 
-## 📝 Learning Assessments
+### 📝 Learning Assessments
 
 ### Knowledge Checks
 - Provided for **Modules 2 through 7**  
@@ -49,6 +76,12 @@
 - Drawn from course materials
 
 ---
+
+
+
+
+
+# Section 3:
 
 ## 🛡️ AWS Certified Security – Specialty Certification
 
