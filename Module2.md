@@ -1,6 +1,123 @@
 # Module Title: Introduction to Security on AWS.
 
-## Incident Response and Mitigation
+# Section 1:
+## Introduction to Security in the AWS Cloud
+
+This section covers security in the AWS Cloud.
+
+### Benefits of Moving to the Cloud
+Companies can realize the following benefits by moving to the cloud:
+*   **Trade fixed expense for variable expense:** Instead of needing to invest heavily in data centers and servers before you know how you will use them, pay only when you consume computing resources, and pay only for how much you consume.
+*   **Benefit from massive economies of scale:** By using cloud computing, you can achieve a lower variable cost than you can get on your own. Because usage from hundreds of thousands of customers is aggregated in the cloud, providers such as AWS can achieve higher economies of scale, which translates into lower pay-as-you-go prices.
+*   **Stop guessing on your capacity needs:** Stop guessing on your infrastructure capacity needs. When you make a capacity decision prior to deploying an application, you often either sit on expensive idle resources or deal with limited capacity. With cloud computing, these problems go away. You can access as much or as little capacity as you need, and scale up and down as required with only a few minutes of notice.
+*   **Increase speed and agility:** In a cloud computing environment, new IT resources are only a click away. This means that you reduce the time to make those resources available to your developers from weeks to minutes. This results in a dramatic increase in agility for the organization, because the cost and time that it takes to experiment and develop is significantly lower.
+*   **Stop spending money to run and maintain data centers:** Focus on projects that differentiate your business instead of focusing on the infrastructure. With cloud computing, you can focus on your own customers, rather than on the heavy lifting of racking, stacking, and powering servers.
+*   **Go global in minutes:** Easily deploy your application in multiple regions around the world with a few clicks. This means you can provide lower latency and a better experience for your customers at minimal cost.
+
+> For more information, see [What Is Cloud Computing?](https://aws.amazon.com/what-is-cloud-computing).
+
+### The CIA Triad of Information Security
+Security is the practice of protecting your intellectual property from unauthorized access, use, or modification. The triad of confidentiality, integrity, and availability, or CIA, was originally developed to highlight the important aspects of information security within an organization.
+
+*   **Confidentiality:** Refers to limiting information access and disclosure to authorized users and preventing access by unauthorized people.
+*   **Integrity:** Involves maintaining the consistency, accuracy, and trustworthiness of data over its entire lifecycle. This includes “origin” or “source integrity,” which is assurance that the sender of that information is who it is supposed to be. Integrity can mean ensuring that the person or entity in question entered the correct information. However, integrity of an information system might only mean preserving data without corruption of whatever was transmitted into or entered into the system.
+*   **Availability:** Refers to the readiness of information resources. An information system that is not available when you need it is almost as useless as no information system.
+
+Modern day IT environments bring challenges to the CIA triad because of the volume of information that must be safeguarded, the multiplicity of sources that the data comes from, and the variety of formats.
+
+## Cloud Security vs. On-Premises Security
+Security in the cloud is similar to security in on-premises data centers, only without the costs and complexities of protecting facilities and hardware. Because the cloud doesn't have any physical servers or storage devices, you use software-based security tools to monitor and protect the flow of information into and out of your AWS resources.
+
+At AWS, we strive to make security as familiar as what you are doing today. You can bring the same security models that you use today in your environment over to the cloud. This includes providing visibility, auditability, and controllability to your resources in the cloud. Additionally, AWS offers several services and tools to equip you with the agility and automation that you need to adapt to cloud-level scaling to take security to the next level.
+
+### AWS Tools for Cloud Security
+
+#### Managing Access Control
+AWS provides methods and tools to manage access control for users, groups, and roles; provide temporary security credentials; and control encryption keys.
+
+*   **AWS Identity and Access Management (IAM):** This service helps you securely control access to AWS resources for your users. Use IAM to control who can use your AWS resources (authentication), what resources they can use, and in what ways (authorization). You can define granular permissions for entities such as users, groups, or roles. This enables entities to administer and use resources in your AWS account without having to share your password or access key. You can grant different permissions to different people for different resources. For example, you might allow some users complete access to Amazon Elastic Compute Cloud (Amazon EC2), Amazon Simple Storage Service (Amazon S3), and other AWS services. For other users, you can allow read-only access to just some S3 buckets, permission to administer just some EC2 instances, or access to your billing information but nothing else. With IAM, you can also allow users who already have passwords elsewhere (e.g., in your corporate network or with an internet identity provider) to access your AWS account.
+
+*   **AWS Security Token Service (AWS STS):** You can use AWS STS to create and provide trusted users with temporary security credentials that can control access to your AWS resources. Temporary security credentials work almost identically to the long-term access key credentials that your IAM users can use.
+
+*   **AWS CloudHSM:** With AWS CloudHSM, you can protect your encryption keys within hardware security modules (HSMs) that are designed and validated to government standards for secure key management. You can securely generate, store, and manage the cryptographic keys used for data encryption in a way that ensures that only you have access to the keys. CloudHSM helps you comply with strict key management requirements within the AWS Cloud without sacrificing application performance.
+
+#### Auditing, Testing, and Validation
+It's important to test and validate your protection measures to ensure that they meet compliance requirements and are operating as intended. Organizations typically rely on regular audits, either internal or external, of their environments to ensure conformity with policies and regulations.
+
+AWS services such as **AWS CloudTrail** can help you answer questions such as:
+*   What actions did a specific user take over a given time period?
+*   For a specific resource, which user has taken actions on it over a given time period?
+*   What is the source IP address of a specific activity?
+
+#### Asset Inventory and Monitoring
+The first step to secure your assets is to know what they are. You shouldn't need to guess what your IT inventory consists of, who is accessing your resources, and what actions anyone has run on your resources.
+
+AWS offers tools to keep track of and monitor your AWS resources, so you have instant visibility into your inventory, and your user and application activity. For example, by using **AWS Config**, you can discover existing AWS resources, export a complete inventory of your AWS resources with all configuration details, and determine how a resource was configured at any point in time. These capabilities can help you with compliance auditing, security analysis, resource change tracking, and troubleshooting.
+
+#### Agility and Automation in Security
+The increase in agility and the ability to perform actions faster, at a larger scale and at a lower cost, does not invalidate well-established principles of information security.
+
+Automatically scaling to ensure high availability during a security attack is one of the ways that AWS provides agility to meet needs. AWS designs data centers with excess bandwidth, so that if a major disruption occurs, sufficient capacity is available to load balance traffic and route it to remaining sites, to minimize the impact on our customers. Customers also use this multiple Region, multiple Availability Zone strategy to build highly resilient applications at a disruptively low cost, to easily replicate and back up data, and to deploy global security controls consistently across their business.
+
+AWS tools are purpose built, and tailored to your unique environment, size, and global requirements. By building security tools from the ground up, AWS can automate many of the routine tasks that security experts normally spend time on. This means AWS security experts can spend more time focusing on measures to increase the security of your AWS Cloud environment. Customers can also automate security engineering and operations functions by using a comprehensive set of APIs and tools.
+
+When you automate by using AWS services such as **AWS CloudFormation**, rather than manually deploying an environment for forensics troubleshooting, for example, you can have AWS deploy an environment in a secure and reproducible manner.
+
+---
+
+### Key Takeaways
+*   The triad of **confidentiality, integrity, and availability (CIA)** was originally developed to highlight the important aspects of information security within an organization.
+*   AWS offers several tools and features to help you meet the security objectives around **controllability, auditability, visibility, agility, and automation**.
+
+# Section 2:
+This section talks about the various security design principles.
+
+## Security Design Principles:
+
+### 1. Apply the principle of least privilege
+An organizational security culture should be built on the principle of least privilege. Only grant access to data and other resources to the people who really need that access. You can start with denying access to everything and grant access as needed, based on job role.
+
+A security best practice is to enforce separation of duties with appropriate authorization for each interaction with your AWS resources. Set expectations for how authority will be delegated down through software engineers, operations staff, and other job functions that are involved in cloud adoption.
+
+By reducing or even ending reliance on long-term credentials, you can diminish your attack surface area. You can use temporary credentials and require identities to dynamically acquire them.
+*   For **workforce identities**, use AWS Single Sign-On or federation with IAM to access AWS accounts.
+*   For **machine identities**, such as EC2 instances or AWS Lambda functions, require the use of IAM roles, instead of IAM users with long-term access keys.
+
+Identity and access management are key parts of an information security program to ensure that only authorized and authenticated users and components are able to access your resources, and only in a manner that you intend. In AWS, **IAM** is the primary service for permissions management. The service provides the ability to control user and programmatic access to AWS services and resources.
+
+With IAM, you can define principals (that is, accounts, users, roles, and services that can perform actions in your account) and build out granular policies aligned with these principals. You also have the ability to require strong password practices, such as setting a complexity level, avoiding re-use, and enforcing multi-factor authentication (MFA). You can use federation with your existing directory service. For workloads that require systems to have access to AWS, IAM can provide secure access through roles, instance profiles, identity federation, and temporary credentials.
+
+### 2. Enable traceability
+With AWS, you can monitor, alert, and audit actions and changes to your environment in real time. AWS provides native logging as well as services that you can use to provide greater visibility in near-real time for occurrences in your environment. Integrate these tools with your existing logging and monitoring solutions. Know what workloads are deployed and operational, so that you can audit and ensure that the environment is operating at expected security governance levels and meeting required security standards.
+
+In AWS, you can implement detective controls by processing logs and events, and monitoring, which allows for auditing, automated analysis, and alarming.
+*   **CloudTrail** logs AWS API calls.
+*   **Amazon CloudWatch** provides monitoring of metrics with alarming.
+*   **AWS Config** provides configuration history.
+*   **Amazon GuardDuty** is a managed threat detection service that continuously monitors for malicious or unauthorized behavior to help you protect your AWS accounts and workloads.
+
+Service-level logs are also available; for example, you can use Amazon S3 to log access requests.
+
+### 3. Secure all layers
+Rather than only focusing on the protection of a single outer layer, apply a **defense in depth** approach with other security controls. This means to apply security to all layers, such as your network, application, and data store. For example, you can require users to strongly authenticate to an application. In addition, ensure that users come from a trusted network path and require access to the decryption keys to process encrypted data. One of the benefits of using AWS is that our services are also built for integration. You can use several AWS services together to provide the most secure environment for your data and resources.
+
+AWS customers are able to tailor, or harden, the configuration of an EC2 instance, Amazon Elastic Container Service (Amazon ECS) container, or AWS Elastic Beanstalk instance, and persist this configuration to an immutable Amazon Machine Image (AMI). Then, all new virtual servers (instances) launched with this AMI receive the hardened configuration, whether they are launched manually or through automatic scaling.
+
+### 4. Automate security
+AWS develops purpose-built security tools that can help you to automate many of the routine tasks that security experts normally spend time on. This means the security experts can spend more time focusing on measures to increase the security of your AWS Cloud environment.
+
+You can automate security engineering and operations functions by using a comprehensive set of APIs and tools. You can fully automate identity management, network security and data protection, and monitoring capabilities, and deliver them by using popular software development methods that you already have in place. Rather than having people monitor your security position and react to an event, with automation, your system can monitor, review, and initiate a response.
+
+In the AWS Cloud, you can turn your **infrastructure into code**. With this capability, you can automate the creation of trusted environments to conduct deeper investigations and forensics. You can run incident response simulations and use tools with automation to increase your speed for detection, investigation, and recovery. By automating deployments and maintenance, you can remove operator access to reduce your attack surface area.
+
+### 5. Protect data in transit and data at rest
+Safeguarding data is a critical piece of building and operating information systems. AWS provides services and features that help you to protect your data at rest and in transit. Safeguards include fine-grained access controls to objects, creating and controlling the encryption keys that are used to encrypt your data, selecting appropriate encryption methods, integrity validation, and appropriate data retention. To help you manage protection, implement a tagging schema to classify your data into sensitivity levels.
+
+*   **Protect data in transit:** A security best practice is to construct mechanisms to protect data in transit, such as using virtual private network (VPN) and Transport Layer Security (TLS) connections. You can arrange for Elastic Load Balancing (ELB) to handle the entire HTTPS encryption and decryption process (generally known as SSL termination).
+
+*   **Protect data at rest:** AWS provides multiple means to encrypt data at rest. We build features into our services that make it easier to encrypt your data. For example, we have implemented server-side encryption (SSE) for Amazon S3 to make it easier for you to store your data in an encrypted form.
+
+### 6. Prepare for security events
 
 Even with mature preventive and detective controls, you should put processes in place to respond to and mitigate the potential impact of security incidents. The architecture of your workload strongly affects your ability to operate effectively during an incident, isolate or contain systems, and restore operations to a known good state. Put tools and access in place ahead of a security incident. Then, routinely practice incident response through game days. This will help you ensure that your architecture can accommodate timely investigation and recovery. Another module in this course will describe a variety of approaches to incident response.
 
@@ -10,9 +127,8 @@ In AWS, the following practices facilitate effective incident response:
 - **Events can be automatically processed** and invoke tools that automate responses through the use of AWS APIs.
 - **You can pre-provision tooling and a “clean room”** by using AWS CloudFormation. This provides the ability to carry out forensics in a safe, isolated environment.
 
----
 
-## Reducing the Attack Surface
+### 7. Minimizing the Attack Surface
 
 Generally, a cyberattack shuts down due to two reasons: either the attackers exhaust themselves and give up, or the attackers achieve their goal. Reduce your exposure to unintended access by hardening operating systems and minimizing the components, libraries, and externally consumable services in use. Start by reducing unused components, such as operating system packages and applications. Configure security groups and network access control lists (ACLs) in Amazon Virtual Private Cloud (Amazon VPC) to help reduce the attack surface of your applications.
 
@@ -40,6 +156,8 @@ The key takeaways from this section of the module are the design principles for 
 - **Minimize the attack surface**.
 
 ---
+
+# Section 3:
 
 ## The Shared Responsibility Model
 
