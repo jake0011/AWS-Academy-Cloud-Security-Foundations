@@ -256,17 +256,15 @@ In this module, you learned how to do the following:
 
 ### Knowledge Check: Practice Question
 Sample exam question:
-According to the shared responsibility model, who is responsible for configuring security group rules to determine which ports are open to an EC2 Linux instance?
-
-Choice Response
-
-  A. AWS is responsible for configuring security group rules.
-  
-  B. The customer is responsible for configuring security group rules.
-  
-  C. Security group rules are not needed.
-  
-  D. AWS is responsible for configuring security group rules, and the customer must open ports to the instance.
+> According to the shared responsibility model, who is responsible for configuring security group rules to determine which ports are open to an EC2 Linux instance?
+> 
+>  A. AWS is responsible for configuring security group rules.
+>
+>  B. The customer is responsible for configuring security group rules.
+>
+>  C. Security group rules are not needed.
+>
+>  D. AWS is responsible for configuring security group rules, and the customer must open ports to the instance.
 
 *Look at the answer choices and rule them out based on the keywords.*
 
