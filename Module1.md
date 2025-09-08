@@ -21,9 +21,11 @@
 After completing this course, you should be able to:
 - Identify **security benefits and responsibilities** of using AWS Cloud.
 - Use the **identity and access management** features of AWS.
-- Describe how to **secure
+- Describe how to secure network access to AWS resources.
+- Explain the available methods for encrypting data at rest and data in transit.
+- Determine which AWS services can be used for monitoring and incident response.
 
-
+---
 
 # Section 2:
 
