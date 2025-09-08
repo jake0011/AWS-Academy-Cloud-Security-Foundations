@@ -251,7 +251,7 @@ A route table contains a set of rules (called routes) that direct network traffi
 *   Private subnets are often used to host database instances that don't need to be accessed through the public internet.
 *   Route tables determine where traffic is routed in your VPC.
 
-  # Using AWS Security Groups
+  # Section 3: Using AWS Security Groups
 
 This section provides information about using security groups as part of securing your infrastructure.
 
@@ -306,7 +306,7 @@ Security groups are **stateful**, which means that state information is kept eve
 *   Security groups are **stateful**, which means that state information is kept even after a request is processed.
 *   All rules are evaluated before a decision is made to allow traffic.
 
-# Using AWS Network ACLs
+# Section 4: Using AWS Network ACLs
 
 This section provides information about using network access control lists (ACLs) as part of securing your infrastructure.
 
@@ -375,7 +375,7 @@ With the **VPC Flow Logs** feature, you can capture information about the IP tra
 *   Network ACLs are **stateless**, which means that responses to inbound traffic are subject to the rules for outbound traffic (and vice versa).
 *   Rules are evaluated in **number order** before a decision is made to allow traffic.
 
-# Using AWS Load Balancers
+# Section 5: Using AWS Load Balancers
 
 This section provides information about using load balancers as part of securing your infrastructure.
 
@@ -431,7 +431,7 @@ This diagram shows how load balancers work in a multi-tier architecture.
 *   ELB can handle the varying load of your application traffic in a single Availability Zone or across multiple Availability Zones.
 *   You can add and remove instances from your load balancer as your needs change, without disrupting the overall flow of requests to your application.
 
-# Pulling It All Together
+# Section 6:Pulling It All Together
 
 This section examines how all of these security features work together.
 
