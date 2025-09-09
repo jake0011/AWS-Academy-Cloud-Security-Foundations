@@ -202,8 +202,6 @@ When using AWS services, you maintain complete control over your content and are
 You retain control of what security you choose to implement to protect your own data, platform, applications, identity and access management, and operating system. This means that the shared responsibility model changes depending on the AWS services that you use.
 
 ### Activity: Analyzing a Scenario
-> **Accessibility Description:**  
-> The architectural diagram shows an AWS Cloud box which contains an AWS Global Infrastructure area, as well as an Amazon S3 bucket, and finally a VPC which contains an Amazon EC2 instance and an Oracle instance. End of accessibility description.
 
 **Scenario:** A customer uses Amazon S3 to store data. The customer manages a VPC that contains an EC2 instance and an Amazon RDS for Oracle database instance. Who is responsible for maintaining the security of each component?
 
